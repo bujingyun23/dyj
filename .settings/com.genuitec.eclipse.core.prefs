@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/book/txl/datagrid-data.json,book/book/txl/datagrid-data.json
+validator.Unchecked=

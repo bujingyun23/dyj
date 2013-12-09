@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE hibernate-mapping PUBLIC 
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+  <class name="com.jxsz.entity.TxlBook" table="t_txl"> 
+    <id name="txlid" column="txlid" type="integer">
+            <generator class="native"/>
+       </id>
+       <property name="name" column="name" type="string" />
+       <property name="phone" column="phone" type="string" />
+       <property name="qq" column="qq" type="string" />
+       <property name="youxiang" column="youxiang" type="string" />
+       <property name="dizhi" column="dizhi" type="string" />
+       <property name="birthday" column="birthday" type="string" />
+  </class>
+ </hibernate-mapping>

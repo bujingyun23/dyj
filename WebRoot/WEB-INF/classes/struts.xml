@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<!-- 是否启用开发模式 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- struts配置文件改动后，是否重新加载 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- 设置浏览器是否缓存静态内容 -->
+	<constant name="struts.serve.static.browserCache" value="true" />
+	<!-- 请求参数的编码方式 -->
+	
+	<!-- 登录信息 -->
+	<package name="login" extends="struts-default" namespace="/login">
+		<action name="userLogin" class="loginAction" method="login">
+			<result name="error">/login.jsp</result>
+			<result name="success">/welcome.jsp</result>
+		</action>
+	</package>
+
+	<package name="easyui" extends="json-default" namespace="/easyui">
+		<!-- 查看所有通讯录信息 -->
+		<action name="getAllTxl" class="TxlBookAction" method="getAllTxl">
+			<result type="json">
+			</result>
+		</action>
+		<!-- 保存增加的通讯录信息 -->
+		<action name="saveTxl" class="TxlBookAction" method="saveTxl">
+			<result type="json">
+			</result>
+		</action>
+		<!-- 删除通讯录信息 -->
+		<action name="deleteTxl" class="TxlBookAction" method="deleteTxl">
+			<result type="json">
+			</result>
+		</action>
+		<!-- 修改通讯录信息 -->
+		<action name="updateTxl" class="TxlBookAction" method="updateTxl">
+			<result type="json">
+			</result>
+		</action>
+		<!--根据条件查询通讯录信息 -->
+		<action name="searchTxl" class="TxlBookAction" method="searchTxl">
+			<result type="json">
+			</result>
+		</action>
+	</package>
+</struts>

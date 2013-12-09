@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="dyj">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/configuration"/>
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <property name="java-output-path" value="/dyj/book/WEB-INF/classes"/>
+        <property name="context-root" value="/dyj"/>
+    </wb-module>
+</project-modules>
